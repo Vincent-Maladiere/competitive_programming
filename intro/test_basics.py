@@ -2,7 +2,7 @@ import pytest
 import heapq
 from copy import deepcopy
 
-from basics import OurHeap
+from intro.basics import OurHeap
 
 
 def test_heap_init():

@@ -25,6 +25,10 @@ def t9(x):
     Was the vocabulary very large, using a max-heap to pop in O(1) the most
     probable word would be more time efficient than using a max() of time complexity
     O(size_word_remaining), at the expense of memory complexity.
+
+    An alternative solution would be to precompute all suffixes and store a dict mapping
+    their T9 representation to their probas. Then, queries would happen in O(k), at
+    the cost of storing k * n suffixes.
     """
     inputs = _parser(x)
     keyboard = [
